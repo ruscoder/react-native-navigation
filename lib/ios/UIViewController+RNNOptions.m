@@ -41,6 +41,7 @@ const NSInteger BLUR_STATUS_TAG = 78264801;
 				search.searchBar.placeholder = placeholder;
 			}
 			self.navigationItem.searchController = search;
+			[self.navigationItem setHidesSearchBarWhenScrolling:NO];
 			
 			// Fixes #3450, otherwise, UIKit will infer the presentation context to be the root most view controller
 			self.definesPresentationContext = YES;
